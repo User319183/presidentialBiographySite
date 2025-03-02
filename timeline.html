@@ -1,68 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Benjamin Harrison - Timeline</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+        />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Benjamin Harrison - Timeline</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Benjamin Harrison</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="timeline.html">Timeline</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quiz.html">Quiz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Benjamin Harrison</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="timeline.html">Timeline</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="quiz.html">Quiz</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
+        <main class="container my-5">
+            <section class="timeline-header text-center mb-5">
+                <h1 class="display-4">The Life & Legacy</h1>
+                <h2 class="mb-4">Benjamin Harrison Timeline</h2>
+                <p class="lead text-muted">
+                    Explore the key moments in the life of America's 23rd President
+                </p>
+            </section>
 
-  <main class="container my-4">
-    <h2>Timeline of Benjamin Harrison's Life</h2>
-    <div class="row mt-4">
-      <div class="col-md-6">
-        <div class="list-group">
-          <button class="list-group-item list-group-item-action" onclick="showEvent('1833')">1833 - Birth</button>
-          <button class="list-group-item list-group-item-action" onclick="showEvent('1852')">1852 - College
-            Graduation</button>
-          <button class="list-group-item list-group-item-action" onclick="showEvent('1862')">1862 - Civil War
-            Service</button>
-          <button class="list-group-item list-group-item-action" onclick="showEvent('1888')">1888 - Presidential
-            Election</button>
-          <button class="list-group-item list-group-item-action" onclick="showEvent('1890')">1890 - Sherman Antitrust
-            Act</button>
-          <button class="list-group-item list-group-item-action" onclick="showEvent('1901')">1901 - Death</button>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Event Details</h5>
-            <p id="event-details" class="card-text">Click on a year to see event details.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+            <div class="timeline-container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="vertical-timeline">
+                            <div class="timeline-event" data-year="1833">
+                                <div class="year-marker">
+                                    <span class="year">1833</span>
+                                    <div class="timeline-icon">
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="timeline-content" data-event="1833">
+                                    <h4>Birth</h4>
+                                    <p>Benjamin Harrison was born in North Bend, Ohio</p>
+                                </div>
+                            </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="./js/main.js"></script>
-</body>
+                            <div class="timeline-event" data-year="1852">
+                                <div class="year-marker">
+                                    <span class="year">1852</span>
+                                    <div class="timeline-icon">
+                                        <i class="bi bi-book-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="timeline-content" data-event="1852">
+                                    <h4>College Graduation</h4>
+                                    <p>Graduated from Miami University in Oxford, Ohio</p>
+                                </div>
+                            </div>
 
+                            <div class="timeline-event" data-year="1862">
+                                <div class="year-marker">
+                                    <span class="year">1862</span>
+                                    <div class="timeline-icon">
+                                        <i class="bi bi-flag-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="timeline-content" data-event="1862">
+                                    <h4>Civil War Service</h4>
+                                    <p>Served as Colonel in the Union Army during Civil War</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-event" data-year="1888">
+                                <div class="year-marker">
+                                    <span class="year">1888</span>
+                                    <div class="timeline-icon">
+                                        <i class="bi bi-award-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="timeline-content" data-event="1888">
+                                    <h4>Presidential Election</h4>
+                                    <p>Won presidential election against Grover Cleveland</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-event" data-year="1890">
+                                <div class="year-marker">
+                                    <span class="year">1890</span>
+                                    <div class="timeline-icon">
+                                        <i class="bi bi-file-text-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="timeline-content" data-event="1890">
+                                    <h4>Sherman Antitrust Act</h4>
+                                    <p>Signed the Sherman Antitrust Act</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-event" data-year="1901">
+                                <div class="year-marker">
+                                    <span class="year">1901</span>
+                                    <div class="timeline-icon">
+                                        <i class="bi bi-moon-stars-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="timeline-content" data-event="1901">
+                                    <h4>Death</h4>
+                                    <p>Passed away in Indianapolis, Indiana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card event-details-card sticky-top" style="top: 100px">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Event Details</h5>
+                                <div id="event-details-container">
+                                    <p id="event-details" class="card-text lead"></p>
+                                    <div class="text-center mt-4 event-prompt">
+                                        <p class="text-muted">
+                                            <i class="bi bi-arrow-left-circle"></i> Click on a
+                                            timeline event
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="module" src="./js/main.js"></script>
+    </body>
 </html>
