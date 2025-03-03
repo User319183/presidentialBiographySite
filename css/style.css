@@ -679,3 +679,33 @@ li {
         height: auto;
     }
 }
+
+
+/* Citation Page Styles */
+.citation-container {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.citation-entry {
+    padding-left: 2rem;
+    text-indent: -2rem;
+    line-height: 1.8;
+}
+
+.citation-text {
+    font-size: 1.05rem;
+}
+
+.citation-text a {
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.citation-text a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
